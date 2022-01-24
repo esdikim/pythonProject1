@@ -1,0 +1,39 @@
+import time
+import pybithumb
+
+# API Key 값
+con_key = "dcf8aaf072f8b00c7b34f1b6d21e19f1"
+sec_key = "d124474264f75e438b4fcea43aeeaa46"
+
+bithumb = pybithumb.Bithumb(con_key, sec_key)
+
+# 나의 특정 ticker의 자산, 거래중인수량, 보유중인총원화, 주문에사용된총원화)
+balance = bithumb.get_balance("KLAY")
+print("나의 Klay 현황: ", balance)
+
+# myremainmoney = balance[2]-balance[3]
+# print(myremainmoney)
+# tt = myremainmoney-(myremainmoney*0.015)
+# print(tt)
+# for ticker in pybithumb.get_tickers():
+#     balance2 = bithumb.get_balance(ticker)
+#     print(ticker, ":", balance2)
+#     time.sleep(0.1)
+
+# 주문을 해보자
+# order = bithumb.buy_limit_order("KLAY", 1671, 1)
+# " bid, klay, 주문번호 - 주문조회/취소/정정에 사용됨, KRW 원화"
+# ('bid', 'KLAY', 'C0538000000030396139', 'KRW')
+# print(order)
+
+# {'status': '5600', 'message': '최소 주문금액은 500 KRW 입니다.'}
+
+# order = bithumb.buy_limit_order("KLAY", 1300, 1)
+# print(order)
+# time.sleep(12)
+order = 'C0538000000030396139'
+print(order)
+cancel = bithumb.cancel_order(order)
+print(cancel)
+
+# get order book

@@ -1,0 +1,8 @@
+단축키
+
+CTRL+SHIFT+F : Find in File
+▶ Method 위치 찾기 : (해당 메소드 블락) + Ctrl + B
+▶ 변수 이름 전체 변경 : Shift + F6
+▶ 주석 : Ctrl + / (줄) Ctrl + Shift + T (문단)
+[출처] [IntelliJ]인텔리제이 단축키 정리(Window)|작성자 빼미
+https://blog.naver.com/ppaemi99/222608582836
