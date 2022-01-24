@@ -23,7 +23,7 @@ print("나의 ADA 현황: ", balance)
 # print(order)
 
 # {'status': '5600', 'message': '최소 주문금액은 500 KRW 입니다.'}
-order = Bithumb.buy_limit_order("ADA", 1430, 3)
+order = Bithumb.buy_limit_order("ADA", 1210, 3)
 # order = Bithumb.sell_limit_order("KLAY",1730, 2, "KRW")
 print(order)
 
